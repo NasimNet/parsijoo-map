@@ -1,5 +1,6 @@
 === Parsijoo MAP ===
 Contributors: nasimnet
+Donate link: https://nasimnet.ir
 Tags: map, parsijoo, googlemap, leaflet
 Requires at least: 4.0
 Tested up to: 4.9.6
