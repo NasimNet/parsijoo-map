@@ -4,22 +4,52 @@
  * @author NasimNet Dev.
  * @see https://nasimnet.ir
  */
+.postbox {
+    margin: 20px;
+}
+.postbox .hndle {
+    padding:0 10px 10px
+}
 .main, p {
     font: 13px Tahoma;
     color: #666;
 }
+#parsijoo_api_map {
+    direction: ltr;
+	padding: 8px;
+}
 .description {
 	font: 12px tahoma;
 	color: #777;
+    margin-top:10px
 }
 label {
 	font-weight: bold;
 }
+.margin-20 {
+    margin: 20px 0;
+}
 .danger {
-	color: #f03;
+	background-color: #fcdbdb;
+	padding: 10px;
+	color: #b31d1d;
+	margin-bottom: 0;
+	border-radius: 3px;
+}
+.help-map {
+	background-color: #eee;
+	padding: 10px;
+	font-style: normal;
+}
+.help-map .dashicons {
+	vertical-align: middle;
+}
+#leaflet {
+    height: 450px
 }
 #parsijoo-shortcode {
-	width: 450px;
+    direction: ltr;
+	width: 563px;
 	padding: 9px;
 }
 .copyright {

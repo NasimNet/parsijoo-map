@@ -5,7 +5,7 @@ Tags: map, parsijoo, googlemap, leaflet
 Requires at least: 4.0
 Tested up to: 4.9.6
 Requires PHP: 5.4
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,6 +26,13 @@ With this plugin you can display your location on the Parsijoo MAP
 1. Use the Tools->parsijoo map screen to configure the plugin
 
 == Changelog ==
+= 1.2 =
+* حذف تمامی استایل ها و انتقال آن ها به فایل css
+* اضافه شدن کد jquery برای انتخاب فیلد شورتکد
+* ویرایش برخی از قسمت های افزونه برای قرار گرفتن در مخزن وردپرس
+* تغییر نام پروژه
+* و تغییرات جزئی دیگر
+
 = 1.1 =
 * اضافه شدن نقشه در ادمین برای ساخت شورتکد خودکار
 * اضافه شدن پارامتر zoom به شورتکد

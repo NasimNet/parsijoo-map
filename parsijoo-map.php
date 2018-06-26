@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Parsijoo MAP
  * Description: With this plugin you can display your location on the Parsijoo MAP
- * Version: 1.1
+ * Version: 1.2
  * Author: NasimNet
  * Author URI: https://nasimnet.ir
  * License: GPLv3
@@ -11,7 +11,7 @@
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 define( 'NP_MAP', 'nasimnet-parsijoo-map');
-define( 'NP_MAP_VERSION', '1.1' );
+define( 'NP_MAP_VERSION', '1.2' );
 
 add_action( 'admin_enqueue_scripts', 'nasimnet_parsijoo_admin_style' );
 function nasimnet_parsijoo_admin_style($hook) {

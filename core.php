@@ -27,9 +27,12 @@ class NasimnetParsijooMap {
 
         <?php $this->process_form_data(); ?>
 
-		<div class="postbox" style="margin: 20px">
-			<h2 class="hndle ui-sortable-handle pad10 margin-0" style="padding:0 10px 10px">
-				<span><?php _e( 'تنظیمات افزونه', NP_MAP ); ?></span>
+		<div class="postbox">
+			<h2 class="hndle ui-sortable-handle pad10 margin-0">
+				<span>
+                    <span class="dashicons dashicons-location"></span>
+                    <?php _e( 'تنظیمات افزونه نقشه پارسی جو', NP_MAP ); ?>
+                </span>
 			</h2>
 
 			<div class="inside">
@@ -59,7 +62,10 @@ class NasimnetParsijooMap {
                         <th><label for="user_login">API پارسی جو</label></th>
                         <td>
                             <input name="parsijoo_api_map" id="parsijoo_api_map" value="<?php echo get_option( 'parsijoo_api_map'); ?>" class="regular-text" type="text">
-                            <div class="description" style="margin-top:10px">API خود را وارد نمایید. <a href="http://addmap.parsijoo.ir/addmap/بلاگ/306-راهنمای-دریافت-api-key-نقشه-پارسی-جو" target="_blank">راهنمای دریافت API Key نقشه پارسی جو </a></div>
+                            <div class="description">
+                                API نقشه پارسی جو را وارد نمایید.
+                                <a href="http://addmap.parsijoo.ir/addmap/بلاگ/306-راهنمای-دریافت-api-key-نقشه-پارسی-جو" target="_blank">راهنمای دریافت API Key</a>
+                            </div>
                         </td>
                    </tr>
                 </tbody>
@@ -70,8 +76,8 @@ class NasimnetParsijooMap {
     }
 
     private function lerning() { ?>
-        <hr style="margin:20px 0;">
-        <p>برای استفاده از نقشه در سایت خود می توانید از شورت کد زیر استفاده نمایید.</p>
+        <hr class="margin-20">
+        <p>برای استفاده از نقشه در سایت خود می توانید از شورتکد زیر استفاده نمایید.</p>
         <p><code>[parsijoo_map latlng="" zoom="" height=""]</code></p>
         <p>
             پارامتر <b>latlng</b> : طول و عرض جغرافیایی ، مانند : 31.879897, 54.317292<br>
@@ -80,8 +86,6 @@ class NasimnetParsijooMap {
         </p>
         <p> نمونه مانند زیر می شود.</p>
         <p><code>[parsijoo_map latlng="31.879897, 54.317292" zoom="20" height="300"]</code></p>
-        <p>بعد از وارد کردن API پارسی جو می توانید از طریق نقشه زیر مکان مورد نظر خود را انتخاب کرده و شورتکد مکان مورد نظر را دریافت نمایید.
-        </p>
         <hr>
         <?php
     }
@@ -97,14 +101,15 @@ class NasimnetParsijooMap {
         $api_map  = get_option( 'parsijoo_api_map');
 
         if ( !$api_map || $api_map == '' ) {
-            echo '<p class="danger">جهت مشاهده نقشه و ساخت خودکار شورتکد ، لطفا API نقشه پارسی جو را وارد نمایید.</p>';
+            echo '<p class="danger"><span class="dashicons dashicons-warning"></span> جهت مشاهده نقشه و ساخت خودکار شورتکد ، لطفا API نقشه پارسی جو را وارد نمایید.</p>';
             return;
         } ?>
 
+        <p class="help-map"><span class="dashicons dashicons-location-alt"></span> از طریق نقشه زیر مکان مورد نظر خود را انتخاب کرده و شورتکد مکان مورد نظر را دریافت نمایید.</p>
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
         <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
 
-        <div id="leaflet" style="height: 450px"></div>
+        <div id="leaflet"></div>
 
         <script type="text/javascript">
             jQuery(document).ready(function($) {
@@ -131,13 +136,14 @@ class NasimnetParsijooMap {
                     $('#parsijoo-shortcode').val( shortcode );
                 });
 
+                $('#parsijoo-shortcode').focus(function() { $(this).select(); } );
             });
         </script>
 
         <br>
         <p>ابتدا مکان مورد نظر خود را انتخاب کرده و سپس شورتکد زیر را کپی کنید و در مکان دلخواه خود قرار دهید.</p>
         <div class="nasimnet-shortcode">
-            <input id="parsijoo-shortcode" type="text" value="" style="direction:ltr;width:450px">
+            <input id="parsijoo-shortcode" type="text" value='[parsijoo_map latlng="31.879897, 54.317292" zoom="15" height="300"]'>
         </div><?php
     }
 
