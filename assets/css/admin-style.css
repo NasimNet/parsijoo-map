@@ -1,0 +1,38 @@
+/**
+ * admin style <parsijoo map>
+ *
+ * @author NasimNet Dev.
+ * @see https://nasimnet.ir
+ */
+.main, p {
+    font: 13px Tahoma;
+    color: #666;
+}
+.description {
+	font: 12px tahoma;
+	color: #777;
+}
+label {
+	font-weight: bold;
+}
+.danger {
+	color: #f03;
+}
+#parsijoo-shortcode {
+	width: 450px;
+	padding: 9px;
+}
+.copyright {
+	border-top: 1px solid #eee;
+	padding: 10px;
+	background-color: #777;
+}
+.copyright p {
+	color: #fff;
+	margin: 0;
+}
+.copyright a {
+	color: #ccc;
+	text-decoration: none;
+	font-weight: bold;
+}
