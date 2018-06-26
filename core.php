@@ -154,10 +154,10 @@ if ( is_admin() )
  * @return string   html
  */
 function nasimnet_parsijoo_map( $atts ) {
-    $api_map = get_option( 'parsijoo_api_map');
+    $api_map  = get_option( 'parsijoo_api_map');
     $location = $atts['latlng'];
-    $zoom = ( isset( $atts['zoom'] ) ) ? $atts['zoom'] : '15' ;
-    $height = ( isset( $atts['height'] ) ) ? $atts['height'] : '300' ;
+    $zoom     = ( isset( $atts['zoom'] ) ) ? $atts['zoom'] : '15' ;
+    $height   = ( isset( $atts['height'] ) ) ? $atts['height'] : '300' ;
     ob_start(); ?>
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>

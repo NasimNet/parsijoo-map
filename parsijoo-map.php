@@ -1,15 +1,13 @@
 <?php
 /**
- * Plugin Name: نقشه پارسی جو
- * Plugin URI: https://nasimnet.ir
- * Description: با استفاده از این افزونه می توانید موقعیت مکانی خود را بر روی نقشه پارسی جو نمایش دهید.
+ * Plugin Name: Parsijoo MAP
+ * Description: With this plugin you can display your location on the Parsijoo MAP
  * Version: 1.1
  * Author: NasimNet
  * Author URI: https://nasimnet.ir
  * License: GPLv3
  * License URI: https://nasimnet.ir/copyright-balck-list-nasimnet/
-*/
-
+ */
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 define( 'NP_MAP', 'nasimnet-parsijoo-map');
