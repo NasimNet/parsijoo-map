@@ -1,0 +1,114 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Parsijoo MAP\n"
+"POT-Creation-Date: 2018-06-27 20:21+0430\n"
+"PO-Revision-Date: 2018-06-27 20:21+0430\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.0.8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: parsijoo-map.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/admin.php:18 includes/admin.php:19
+msgid "Parsijoo MAP"
+msgstr "نقشه پارسی جو"
+
+#: includes/admin.php:34
+msgid "Parsijoo MAP Plugin Settings"
+msgstr "تنظیمات افزونه نقشه پارسی جو"
+
+#: includes/admin.php:48
+#, php-format
+msgid "Developed with %s - Version %s"
+msgstr "طراحی و توسعه توسط  %s - نسخه  %s"
+
+#: includes/admin.php:62
+msgid "Parsijoo API"
+msgstr "API پارسی جو"
+
+#: includes/admin.php:66
+msgid "Enter the Parsijoo Map API Key,"
+msgstr "API نقشه پارسی جو را وارد نمایید ، "
+
+#: includes/admin.php:67
+msgid "API Key Get Guide"
+msgstr "راهنمای دریافت کلید API"
+
+#: includes/admin.php:81
+msgid "To use the map on your site, you can use the following shortcode."
+msgstr ""
+"برای استفاده از نقشه در سایت خود می توانید از شورتکد زیر استفاده نمایید."
+
+#: includes/admin.php:87
+#, php-format
+msgid "Parameter %s : Latitude and Longitude, Example: 31.879897, 54.317292"
+msgstr "پارامتر %s : طول و عرض جغرافیایی ، مانند : 31.879897, 54.317292"
+
+#: includes/admin.php:92
+#, php-format
+msgid ""
+"Parameter %s : Map zoom, only a numeric value for this parameter is allowed, "
+"the use of this parameter is optional."
+msgstr ""
+"پارامتر %s : زوم نقشه ، تنها یک مقدار عددی برای این پارامتر مجاز است ، "
+"استفاده از این پارامتر اختیاری است."
+
+#: includes/admin.php:97
+#, php-format
+msgid ""
+"Parameter %s : The height of the map, only a numeric value for this "
+"parameter is allowed, the use of this parameter is optional."
+msgstr ""
+"پارامتر %s :  ارتفاع نقشه ، تنها یک مقدار عددی برای این پارامتر مجاز است ، "
+"استفاده از این پارامتر اختیاری است."
+
+#: includes/admin.php:101
+msgid "The sample is as follows"
+msgstr "نمونه مانند زیر می شود"
+
+#: includes/admin.php:119
+msgid ""
+"To view the map and build the shotcode, please enter the Persian Maps API."
+msgstr ""
+" جهت مشاهده نقشه و ساخت خودکار شورتکد ، لطفا API نقشه پارسی جو را وارد نمایید"
+
+#: includes/admin.php:126
+msgid "Select the place you want and copy your shortcode."
+msgstr ""
+"از طریق نقشه زیر مکان مورد نظر خود را انتخاب کرده و شورتکد مکان مورد نظر را "
+"دریافت نمایید."
+
+#: includes/admin.php:131
+msgid "Copy and paste your shortcode into a post, page or custom widget"
+msgstr ""
+"ابتدا مکان مورد نظر خود را انتخاب کرده و سپس شورتکد زیر را کپی کرده و در "
+"مطالب ، برگه ها و یا ابزارک دلخواه خود قرار دهید"
+
+#. Plugin Name of the plugin/theme
+msgid "PARSIJOO MAP"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "With this plugin you can display your location on the Parsijoo MAP"
+msgstr ""
+"با این پلاگین می توانید مکان مورد نظر خود را بر روی نقشه پارسی جو نمایش دهید"
+
+#. Author of the plugin/theme
+msgid "NasimNet"
+msgstr "نسیم نت"
+
+#. Author URI of the plugin/theme
+msgid "https://nasimnet.ir"
+msgstr ""

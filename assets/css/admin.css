@@ -29,6 +29,15 @@ label {
 .margin-20 {
     margin: 20px 0;
 }
+.parametrs {
+	background-color: #f8f8f8;
+	border: 1px solid #eee;
+}
+.parametrs li {
+	border-bottom: 1px solid #eee;
+	padding: 10px;
+	margin: 0;
+}
 .danger {
 	background-color: #fcdbdb;
 	padding: 10px;

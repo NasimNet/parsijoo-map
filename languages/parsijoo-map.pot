@@ -1,0 +1,103 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Parsijoo MAP\n"
+"POT-Creation-Date: 2018-06-27 20:21+0430\n"
+"PO-Revision-Date: 2018-06-27 20:00+0430\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: parsijoo-map.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/admin.php:18 includes/admin.php:19
+msgid "Parsijoo MAP"
+msgstr ""
+
+#: includes/admin.php:34
+msgid "Parsijoo MAP Plugin Settings"
+msgstr ""
+
+#: includes/admin.php:48
+#, php-format
+msgid "Developed with %s - Version %s"
+msgstr ""
+
+#: includes/admin.php:62
+msgid "Parsijoo API"
+msgstr ""
+
+#: includes/admin.php:66
+msgid "Enter the Parsijoo Map API Key,"
+msgstr ""
+
+#: includes/admin.php:67
+msgid "API Key Get Guide"
+msgstr ""
+
+#: includes/admin.php:81
+msgid "To use the map on your site, you can use the following shortcode."
+msgstr ""
+
+#: includes/admin.php:87
+#, php-format
+msgid "Parameter %s : Latitude and Longitude, Example: 31.879897, 54.317292"
+msgstr ""
+
+#: includes/admin.php:92
+#, php-format
+msgid ""
+"Parameter %s : Map zoom, only a numeric value for this parameter is allowed, "
+"the use of this parameter is optional."
+msgstr ""
+
+#: includes/admin.php:97
+#, php-format
+msgid ""
+"Parameter %s : The height of the map, only a numeric value for this "
+"parameter is allowed, the use of this parameter is optional."
+msgstr ""
+
+#: includes/admin.php:101
+msgid "The sample is as follows"
+msgstr ""
+
+#: includes/admin.php:119
+msgid ""
+"To view the map and build the shotcode, please enter the Persian Maps API."
+msgstr ""
+
+#: includes/admin.php:126
+msgid "Select the place you want and copy your shortcode."
+msgstr ""
+
+#: includes/admin.php:131
+msgid "Copy and paste your shortcode into a post, page or custom widget"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "PARSIJOO MAP"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "With this plugin you can display your location on the Parsijoo MAP"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "NasimNet"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://nasimnet.ir"
+msgstr ""

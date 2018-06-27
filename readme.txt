@@ -1,17 +1,26 @@
-=== Parsijoo MAP ===
+=== PARSIJOO MAP ===
 Contributors: nasimnet
 Donate link: https://nasimnet.ir
 Tags: map, parsijoo, googlemap, leaflet
 Requires at least: 4.0
 Tested up to: 4.9.6
 Requires PHP: 5.4
-Stable tag: 1.2
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-With this plugin you can display your location on the Parsijoo MAP
+by this plugin you can display your location on the Parsijoo MAP
 
-== Description ==
+== Imported projects ==
+** Leaflet **
+Leaflet is the leading open-source JavaScript library for mobile-friendly interactive maps. Weighing just about 38 KB of JS, it has all the mapping features most developers ever need.
+
+Leaflet is designed with simplicity, performance and usability in mind. It works efficiently across all major desktop and mobile platforms, can be extended with lots of plugins, has a beautiful, easy to use and well-documented API and a simple, readable source code that is a joy to contribute to.
+
+** Parsijoo MAP **
+
+
+== Persian Description ==
 با استفاده از این افزونه می توانید موقعیت مکانی خود را بر روی نقشه پارسی جو نمایش دهید.
 
 * قابلیت ذخیره API نقشه
@@ -26,6 +35,18 @@ With this plugin you can display your location on the Parsijoo MAP
 1. Use the Tools->parsijoo map screen to configure the plugin
 
 == Changelog ==
+
+= 1.3 =
+* تمامی فایل های leaflet به داخل پلاگین انتقال داده شد.
+* ساختار لود شدن فایل ها تغییر داده شد
+* textdomain ها ویرایش شد
+* تمامی متون به زبان انگلیسی بازنویسی شد
+* پشتیبانی پوسته از فایل زبان اضافه شد
+* زبان فارسی اضافه شد
+* قابلیت ساخت zoom به شورتکد اضافه شد
+* برخی از استایل های بهینه شد
+* استانداردهای وردپرس برای قرار گرفتن در مخزن اعمال شد
+
 = 1.2 =
 * حذف تمامی استایل ها و انتقال آن ها به فایل css
 * اضافه شدن کد jquery برای انتخاب فیلد شورتکد
