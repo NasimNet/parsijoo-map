@@ -11,14 +11,20 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 by this plugin you can display your location on the Parsijoo MAP
 
-== Imported projects ==
+== Description ==
+
+by this plugin you can display your location on the Parsijoo MAP
+
 ** Leaflet **
 Leaflet is the leading open-source JavaScript library for mobile-friendly interactive maps. Weighing just about 38 KB of JS, it has all the mapping features most developers ever need.
 
 Leaflet is designed with simplicity, performance and usability in mind. It works efficiently across all major desktop and mobile platforms, can be extended with lots of plugins, has a beautiful, easy to use and well-documented API and a simple, readable source code that is a joy to contribute to.
 
 ** Parsijoo MAP **
-
+Parsijoo map is the first and most specialized indigenous and comprehensive map of Iran, which has been designed and implemented on the basis of the experience and expertise of the Persian Bar Association. Extensive coverage, complete integration, accurate details and multiple updates at low intervals are among the most important features.
+Parsijoo map covering over 650 Iranian cities and over 530 different layers of information includes features such as
+drawing, editing, recording of locations, as well as a variety of information layers and unique cartography.
+To use this service, its requires an account and an API key.
 
 == Persian Description ==
 با استفاده از این افزونه می توانید موقعیت مکانی خود را بر روی نقشه پارسی جو نمایش دهید.
