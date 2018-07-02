@@ -5,7 +5,7 @@ Tags: map, parsijoo, googlemap, leaflet
 Requires at least: 4.0
 Tested up to: 4.9.6
 Requires PHP: 5.4
-Stable tag: 1.3.1
+Stable tag: 1.3.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,6 +14,8 @@ by this plugin you can display your location on the Parsijoo MAP
 == Description ==
 
 by this plugin you can display your location on the Parsijoo MAP
+
+== Used projects ==
 
 = Leaflet =
 Leaflet is the leading open-source JavaScript library for mobile-friendly interactive maps. Weighing just about 38 KB of JS, it has all the mapping features most developers ever need.
@@ -41,6 +43,11 @@ To use this service, its requires an account and an API key.
 1. Use the Tools->parsijoo map screen to configure the plugin
 
 == Changelog ==
+
+= 1.3.2 =
+* تغییر readme
+* ویرایش تصاویر افزونه
+
 = 1.3.1 =
 * تصاویر اضافه شد
 * تغییر جزئی در readme
