@@ -5,7 +5,7 @@ Tags: map, parsijoo, googlemap, leaflet
 Requires at least: 4.0
 Tested up to: 4.9.6
 Requires PHP: 5.4
-Stable tag: 1.3.2
+Stable tag: 1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,10 @@ To use this service, its requires an account and an API key.
 1. Use the Tools->parsijoo map screen to configure the plugin
 
 == Changelog ==
+
+= 1.4 = 
+Release Date: 2018-07-11
+* اضافه شدن قابلیت نمایش چندین نقشه در یک صفحه
 
 = 1.3.2 =
 * تغییر readme

@@ -8,6 +8,7 @@
  */
 function nasimnet_parsijoo_map( $atts ) {
     $api_map = esc_attr( get_option( 'parsijoo_api_map') );
+    $rand_id = 'leaflet_' . uniqid();
 
     // default shortcode atts
     $a = shortcode_atts( array(
@@ -17,15 +18,20 @@ function nasimnet_parsijoo_map( $atts ) {
     ), $atts );
 
     // enqueue css and js leaflet
-    wp_enqueue_style( 'leaflet_css' );
-    wp_enqueue_script( 'leaflet_js' );
+    if ( ! wp_style_is( 'leaflet_css') ) {
+        wp_enqueue_style( 'leaflet_css' );
+    }
+    
+    if ( ! wp_script_is( 'leaflet_js' ) ) {
+       wp_enqueue_script( 'leaflet_js' );
+    }    
 
     ob_start(); ?>
-    <div id="leaflet" style="height: <?php echo $a['height']; ?>px"></div>
+    <div id="<?php echo $rand_id; ?>" style="height: <?php echo $a['height']; ?>px"></div>
 
     <script type="text/javascript">
         jQuery(document).ready(function() {
-            var map = L.map('leaflet').setView([<?php echo $a['latlng']; ?>], <?php echo $a['zoom'] ?>);
+            var map = L.map('<?php echo $rand_id; ?>').setView([<?php echo $a['latlng']; ?>], <?php echo $a['zoom'] ?>);
             L.tileLayer('https://developers.parsijoo.ir/web-service/v1/map/?type=tile&x={x}&y={y}&z={z}&apikey=<?php echo $api_map; ?>', { maxZoom: 20, }).addTo(map);
             L.marker([<?php echo $a['latlng']; ?>]).addTo(map);
         });
