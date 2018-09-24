@@ -15,16 +15,17 @@ function nasimnet_parsijoo_map( $atts ) {
         'latlng' => '31.879897, 54.317292',
         'zoom'   => '15',
         'height' => '300',
+        'popup'  => ''
     ), $atts );
 
     // enqueue css and js leaflet
     if ( ! wp_style_is( 'leaflet_css') ) {
         wp_enqueue_style( 'leaflet_css' );
     }
-    
+
     if ( ! wp_script_is( 'leaflet_js' ) ) {
        wp_enqueue_script( 'leaflet_js' );
-    }    
+    }
 
     ob_start(); ?>
     <div id="<?php echo $rand_id; ?>" style="height: <?php echo $a['height']; ?>px"></div>
@@ -33,7 +34,11 @@ function nasimnet_parsijoo_map( $atts ) {
         jQuery(document).ready(function() {
             var map = L.map('<?php echo $rand_id; ?>').setView([<?php echo $a['latlng']; ?>], <?php echo $a['zoom'] ?>);
             L.tileLayer('https://developers.parsijoo.ir/web-service/v1/map/?type=tile&x={x}&y={y}&z={z}&apikey=<?php echo $api_map; ?>', { maxZoom: 20, }).addTo(map);
-            L.marker([<?php echo $a['latlng']; ?>]).addTo(map);
+            marker = L.marker([<?php echo $a['latlng']; ?>]).addTo(map);
+
+            <?php if ( $a['popup'] != '' ): ?>
+                marker.bindPopup("<?php echo $a['popup']; ?>").openPopup();
+            <?php endif; ?>
         });
     </script><?php
     return ob_get_clean();
