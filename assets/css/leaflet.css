@@ -502,7 +502,7 @@
     font-family: Tahoma;
 }
 .leaflet-popup-content {
-    margin: 13px 19px;
+    margin: 5px;
     line-height: 1.4;
 }
 .leaflet-popup-content p {

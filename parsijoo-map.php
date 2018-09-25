@@ -17,6 +17,7 @@ define( 'NASIMNET_PMAP_VERSION', '1.4' );
 // require file's
 require_once ( plugin_dir_path( __FILE__ ) . 'includes/admin.php' );
 require_once ( plugin_dir_path( __FILE__ ) . 'includes/shortcode.php' );
+require_once ( plugin_dir_path( __FILE__ ) . 'includes/class-options.php' );
 
 /**
  * load plugin textdomain
