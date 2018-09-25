@@ -27,4 +27,16 @@ class NASIMNET_ParsiJoo_MAP_OPTIONS {
         return $html;
     }
 
+    public function get_polygon( $latlangs ) {
+        $latlangs = explode('-', $latlangs);
+        $latlangs = array_filter($latlangs);
+
+        $var = array();
+        foreach ( $latlangs as $latlang ) {
+            $var[] = "[$latlang]";
+        }
+
+        return implode( ',', $var );
+    }
+
 }
