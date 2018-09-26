@@ -258,8 +258,6 @@ class NASIMNET_Parsijoo_Map {
     private function polygon_shortcode() {
         ob_start() ?>
         <div class="map-polygon">
-            <h3><?php _e( 'Polygon Shortcode', 'parsijoo-map' ) ?></h3>
-
             <?php echo do_shortcode( '[parsijoo_map_polygon  height="400" polygon="31.881134, 54.319148-31.879512, 54.311713-31.877325, 54.314320"]' ) ?>
             <ul class="parametrs">
                 <li>
