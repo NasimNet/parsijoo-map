@@ -4,6 +4,9 @@
  * @author NasimNet Dev.
  * @see https://nasimnet.ir
  */
+* {
+     box-sizing: border-box;
+}
 .postbox {
     margin: 20px;
 }
@@ -50,21 +53,60 @@ label {
 	padding: 10px;
 	font-style: normal;
 }
-.help-map .dashicons {
+.nasimnet-map-icon {
 	vertical-align: middle;
+}
+#create-shortcode .inside {
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 #leaflet {
     height: 450px
 }
+.map-details {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+}
+.map-details > div {
+    flex-grow: 1;
+    width: 33%;
+    padding: 10px
+}
+.nasimnet-shortcode {
+	padding: 15px;
+	background-color: #0f6993;
+	margin: 0 -12px;
+}
+.nasimnet-shortcode p {
+	color: #fff;
+}
 #parsijoo-shortcode {
     direction: ltr;
-	width: 563px;
+	width: 100%;
 	padding: 9px;
+}
+.row-example{
+	display: flex;
+    flex-wrap: wrap;
+}
+.row-example .column {
+    flex: 33%;
+    padding: 10px;
+}
+.input-example {
+	width: 100%;
+	padding: 10px;
+	direction: ltr;
+	text-align: left;
 }
 .copyright {
 	border-top: 1px solid #eee;
 	padding: 10px;
 	background-color: #777;
+	margin: -21px 20px;
 }
 .copyright p {
 	color: #fff;

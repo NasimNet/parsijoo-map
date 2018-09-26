@@ -11,20 +11,30 @@ class NASIMNET_ParsiJoo_MAP_OPTIONS {
 
     }
 
-    public function get_popup( $text = false, $image = false ) {
+    public function get_popup( $atts = array() ) {
+        $string = '';
 
-        if ( !$text && !$image ) return false;
-
-        $html = '';
-        if ( $image ) {
-            $html .= '<img src="'.esc_url_raw( $image ).'">';
+        if ( $this->key_exists('image', $atts) ) {
+            $string .= '<img src="'.esc_url_raw( $atts['image'] ).'">';
         }
 
-        if ( $text ) {
-            $html .= '<p>'. esc_attr( $text ).'</p>';
+        if ( $this->key_exists('title', $atts) ) {
+            $string .= '<h4>'. esc_html( $atts['title'] ) .'</h4>';
         }
 
-        return $html;
+        if ( $this->key_exists('text', $atts) ) {
+            $string .= wp_kses_post( $atts['text'] );
+        }
+
+        if ( $this->key_exists('details', $atts) ) {
+            $string .= '<hr>' . wp_kses_post( $atts['details'] );
+        }
+
+        // $string = str_replace('<p>', '', $string);
+        // $string = str_replace('</p>', '', $string);
+        $string = str_replace(array("\n", "\r"), '', $string);
+
+        return $string;
     }
 
     public function get_polygon( $latlangs ) {
@@ -37,6 +47,13 @@ class NASIMNET_ParsiJoo_MAP_OPTIONS {
         }
 
         return implode( ',', $var );
+    }
+
+    private function key_exists( $key, $array ) {
+        if ( isset($array[$key]) && !empty($array[$key]) ) {
+            return true;
+        }
+        return false;
     }
 
 }

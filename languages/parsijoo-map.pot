@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Parsijoo MAP\n"
-"POT-Creation-Date: 2018-06-27 20:21+0430\n"
+"POT-Creation-Date: 2018-09-26 14:36+0330\n"
 "PO-Revision-Date: 2018-06-27 20:00+0430\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Poedit 2.1.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: parsijoo-map.php\n"
@@ -25,65 +25,167 @@ msgstr ""
 msgid "Parsijoo MAP"
 msgstr ""
 
-#: includes/admin.php:34
+#: includes/admin.php:33
 msgid "Parsijoo MAP Plugin Settings"
 msgstr ""
 
-#: includes/admin.php:48
+#: includes/admin.php:41
+msgid ""
+"To view the map and build the shotcode, please enter the Persian Maps API."
+msgstr ""
+
+#: includes/admin.php:49
+msgid "Create Shortcode"
+msgstr ""
+
+#: includes/admin.php:56
+msgid "MAP Lerning"
+msgstr ""
+
+#: includes/admin.php:63
+msgid "POP-UP Parameters"
+msgstr ""
+
+#: includes/admin.php:70
+msgid "Circle Shortcode"
+msgstr ""
+
+#: includes/admin.php:77 includes/admin.php:261
+msgid "Polygon Shortcode"
+msgstr ""
+
+#: includes/admin.php:84
 #, php-format
 msgid "Developed with %s - Version %s"
 msgstr ""
 
-#: includes/admin.php:62
+#: includes/admin.php:114
 msgid "Parsijoo API"
 msgstr ""
 
-#: includes/admin.php:66
+#: includes/admin.php:118
 msgid "Enter the Parsijoo Map API Key,"
 msgstr ""
 
-#: includes/admin.php:67
+#: includes/admin.php:119
 msgid "API Key Get Guide"
 msgstr ""
 
-#: includes/admin.php:81
+#: includes/admin.php:140
 msgid "To use the map on your site, you can use the following shortcode."
 msgstr ""
 
-#: includes/admin.php:87
+#: includes/admin.php:145
 #, php-format
 msgid "Parameter %s : Latitude and Longitude, Example: 31.879897, 54.317292"
 msgstr ""
 
-#: includes/admin.php:92
+#: includes/admin.php:148
 #, php-format
 msgid ""
 "Parameter %s : Map zoom, only a numeric value for this parameter is allowed, "
 "the use of this parameter is optional."
 msgstr ""
 
-#: includes/admin.php:97
+#: includes/admin.php:151
 #, php-format
 msgid ""
 "Parameter %s : The height of the map, only a numeric value for this "
 "parameter is allowed, the use of this parameter is optional."
 msgstr ""
 
-#: includes/admin.php:101
+#: includes/admin.php:154
 msgid "The sample is as follows"
 msgstr ""
 
-#: includes/admin.php:119
-msgid ""
-"To view the map and build the shotcode, please enter the Persian Maps API."
-msgstr ""
-
-#: includes/admin.php:126
+#: includes/admin.php:165
 msgid "Select the place you want and copy your shortcode."
 msgstr ""
 
-#: includes/admin.php:131
+#: includes/admin.php:171
+msgid "Lat"
+msgstr ""
+
+#: includes/admin.php:175
+msgid "Lng"
+msgstr ""
+
+#: includes/admin.php:179
+msgid "Zoom"
+msgstr ""
+
+#: includes/admin.php:186
 msgid "Copy and paste your shortcode into a post, page or custom widget"
+msgstr ""
+
+#: includes/admin.php:197 includes/admin.php:198
+msgid "I am a pop-up"
+msgstr ""
+
+#: includes/admin.php:201 includes/admin.php:203
+msgid "Title pop-up"
+msgstr ""
+
+#: includes/admin.php:201 includes/admin.php:203
+msgid ""
+"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy "
+"nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+msgstr ""
+
+#: includes/admin.php:214
+msgid "Applicable in all shortcodes"
+msgstr ""
+
+#: includes/admin.php:217
+#, php-format
+msgid "Parameter %s : POPUP Image"
+msgstr ""
+
+#: includes/admin.php:220
+#, php-format
+msgid "Parameter %s : POPUP Title"
+msgstr ""
+
+#: includes/admin.php:223
+#, php-format
+msgid "Parameter %s : POPUP Text"
+msgstr ""
+
+#: includes/admin.php:226
+#, php-format
+msgid "Parameter %s : POPUP Details"
+msgstr ""
+
+#: includes/admin.php:238 includes/admin.php:266
+#, php-format
+msgid "ShortCode %s"
+msgstr ""
+
+#: includes/admin.php:241
+#, php-format
+msgid "Parameter %s : Radius"
+msgstr ""
+
+#: includes/admin.php:244
+#, php-format
+msgid "Parameter %s : Latitude and Longitude"
+msgstr ""
+
+#: includes/admin.php:247 includes/admin.php:272
+#, php-format
+msgid "Parameter %s : Map zoom"
+msgstr ""
+
+#: includes/admin.php:250 includes/admin.php:275
+#, php-format
+msgid "Parameter %s : The height of the map"
+msgstr ""
+
+#: includes/admin.php:269
+#, php-format
+msgid ""
+"Parameter %s : To use the parameter polygon, the latitude and longitude must "
+"be separated by \"-\""
 msgstr ""
 
 #. Plugin Name of the plugin/theme

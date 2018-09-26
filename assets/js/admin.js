@@ -18,15 +18,25 @@ jQuery(document).ready(function($) {
 
     marker.on('drag', function (e) {
         marker.setLatLng(e.latlng);
+
+        $('#latMAP').val( e.latlng.lat );
+        $('#lngMAP').val( e.latlng.lng );
+        $('#zoomMAP').val( zoomLev );
+
         var shortcode = '[parsijoo_map latlng="'+ e.latlng.lat + ',' + e.latlng.lng +'" zoom="'+ zoomLev +'" height="300"]';
         $('#parsijoo-shortcode').val( shortcode );
     });
 
     map.on('click', function (e) {
         marker.setLatLng(e.latlng);
+
+        $('#latMAP').val( e.latlng.lat );
+        $('#lngMAP').val( e.latlng.lng );
+        $('#zoomMAP').val( zoomLev );
+
         var shortcode = '[parsijoo_map latlng="'+ e.latlng.lat + ',' + e.latlng.lng +'" zoom="'+ zoomLev +'" height="300"]';
         $('#parsijoo-shortcode').val( shortcode );
     });
 
-    $('#parsijoo-shortcode').focus(function() { $(this).select(); } );
+    $('#parsijoo-shortcode, .input-example').focus(function() { $(this).select(); } );
 });

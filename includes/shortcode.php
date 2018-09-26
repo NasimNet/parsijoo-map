@@ -21,15 +21,17 @@ class NASIMNET_ParsiJoo_MAP_Shortcode {
 
         // default shortcode atts
         $a = shortcode_atts( array(
-            'latlng' => '31.879897, 54.317292',
-            'zoom'   => '15',
-            'height' => '300',
-            'text'   => '',
-            'image'  => ''
+            'latlng'  => '31.879897, 54.317292',
+            'zoom'    => '15',
+            'height'  => '300',
+            'image'   => '',
+            'title'   => '',
+            'text'    => '',
+            'details' => ''
         ), $atts );
 
         $option = new NASIMNET_ParsiJoo_MAP_OPTIONS();
-        $popup = $option->get_popup( $a['text'], $a['image'] );
+        $popup = $option->get_popup( $a );
 
         // enqueue css and js leaflet
         if ( ! wp_style_is( 'leaflet_css') ) {
@@ -77,20 +79,18 @@ class NASIMNET_ParsiJoo_MAP_Shortcode {
 
         // default shortcode atts
         $a = shortcode_atts( array(
-            'latlng' => '31.879897, 54.317292',
-            'zoom'   => 15,
-            'height' => 300,
-            'text'   => '',
-            'image'  => '',
-            'radius' => 2000
-            // 'color'       => '#f03',
-            // 'fillColor'   => '#f03',
-            // 'fillOpacity' => 0.5
-
+            'latlng'  => '31.879897, 54.317292',
+            'zoom'    => 15,
+            'height'  => 300,
+            'image'   => '',
+            'title'   => '',
+            'text'    => '',
+            'details' => '',
+            'radius'  => 2000
         ), $atts );
 
         $option = new NASIMNET_ParsiJoo_MAP_OPTIONS();
-        $popup = $option->get_popup( $a['text'], $a['image'] );
+        $popup = $option->get_popup( $a );
 
         // enqueue css and js leaflet
         if ( ! wp_style_is( 'leaflet_css') ) {
@@ -144,14 +144,15 @@ class NASIMNET_ParsiJoo_MAP_Shortcode {
             'latlng'  => '31.879897, 54.317292',
             'zoom'    => 15,
             'height'  => 300,
-            'text'    => '',
             'image'   => '',
+            'title'   => '',
+            'text'    => '',
+            'details' => '',
             'polygon' => '31.881134, 54.319148-31.879512, 54.311713-31.877325, 54.314320-31.879630, 54.321187'
-
         ), $atts );
 
         $option = new NASIMNET_ParsiJoo_MAP_OPTIONS();
-        $popup = $option->get_popup( $a['text'], $a['image'] );
+        $popup = $option->get_popup( $a );
         $polygon = $option->get_polygon( $a['polygon'] );
 
         // enqueue css and js leaflet
