@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Parsijoo MAP\n"
 "POT-Creation-Date: 2020-05-29 01:27+0430\n"
-"PO-Revision-Date: 2020-05-29 01:29+0430\n"
+"PO-Revision-Date: 2020-05-29 02:12+0430\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -31,7 +31,7 @@ msgstr "API پارسی جو"
 
 #: includes/admin-page.php:33
 msgid "Enter the Parsijoo Map API Key,"
-msgstr "API نقشه پارسی جو را وارد نمایید ، "
+msgstr "API نقشه پارسی جو را وارد نمایید ،"
 
 #: includes/admin-page.php:34
 msgid "API Key Get Guide"
@@ -45,7 +45,8 @@ msgstr "ذخیره اطلاعات"
 msgid ""
 "To view the map and build the shotcode, please enter the Parsijoo Maps API."
 msgstr ""
-" جهت مشاهده نقشه و ساخت خودکار شورتکد ، لطفا API نقشه پارسی جو را وارد نمایید"
+" جهت مشاهده نقشه و ساخت خودکار شورتکد ، لطفا API نقشه پارسی جو را وارد "
+"نمایید."
 
 #: includes/admin-page.php:66
 msgid "Create Shortcode"
@@ -133,7 +134,7 @@ msgstr ""
 
 #: includes/admin-page.php:159
 msgid "Applicable in all shortcodes"
-msgstr "پارامترهای پاپ آپ را می توانید در تمامی شورتکدها استفاده نمایید."
+msgstr "پارامترهای پاپ آپ را می توانید در تمامی شورتکدها استفاده نمایید"
 
 #: includes/admin-page.php:160
 #, php-format
