@@ -1,11 +1,11 @@
 === PARSIJOO MAP ===
 Contributors: nasimnet
 Donate link: https://nasimnet.ir
-Tags: map, parsijoo, googlemap, leaflet
-Requires at least: 4.0
-Tested up to: 4.9.6
-Requires PHP: 5.4
-Stable tag: 2.0
+Tags: map, parsijoo, googlemap, leaflet, shortcode, location
+Requires at least: 5.0
+Tested up to: 5.4.1
+Requires PHP: 5.6
+Stable tag: 3.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,17 @@ To use this service, its requires an account and an API key.
 1. Use the Tools->parsijoo map screen to configure the plugin
 
 == Changelog ==
+
+= 3.0.0 =
+Release Date: 2020-05-29
+* بازنویسی افزونه
+* بهینه سازی کدها
+* اعمال WPCS بر روی کدها
+* و موارد دیگر 
+
+= 2.0.1 =
+Release Date: 2018-09-27
+* حذف یک عنوان تکراری
 
 = 2.0 =
 Release Date: 2018-09-26

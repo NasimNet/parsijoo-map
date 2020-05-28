@@ -1,8 +1,15 @@
-<?php
+<?php //phpcs:ignore
 /**
+ * PARSIJOO MAP
+ *
+ * @package    parsijoo-map
+ * @author     M.Motahari
+ * @copyright  2020 NasimNet
+ * @license    GPL-2.0-or-later
+ *
  * Plugin Name: PARSIJOO MAP
  * Description: With this plugin you can display your location on the Parsijoo MAP
- * Version: 2.0
+ * Version: 3.0.0
  * Author: NasimNet
  * Author URI: https://nasimnet.ir
  * License: GPLv3
@@ -10,70 +17,100 @@
  * Text Domain: parsijoo-map
  * Domain Path: /languages
  */
-if ( ! defined( 'ABSPATH' ) ) exit;
 
-define('NASIMNET_PMAP_VERSION', '2.0');
-define('NASIMNET_PMAP_PLUGIN_FILE', __FILE__);
-define('NASIMNET_PMAP_PLUGIN_DIR', plugin_dir_path(__FILE__));
-define('NASIMNET_PMAP_PLUGIN_URL', plugin_dir_url(__FILE__));
-
-// require file's
-require_once ( plugin_dir_path( __FILE__ ) . 'includes/admin.php' );
-require_once ( plugin_dir_path( __FILE__ ) . 'includes/shortcode.php' );
-require_once ( plugin_dir_path( __FILE__ ) . 'includes/class-options.php' );
+defined( 'ABSPATH' ) || exit;
 
 /**
- * load plugin textdomain
+ * NASIMNET_ParsiJoo_MAP
  *
- * @since 1.3
+ * @package parsijoo-map
+ * @version  3.0.0
  */
-function nasimnet_parsijoo_map_load_textdomain() {
-  load_plugin_textdomain( 'parsijoo-map', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+class NASIMNET_ParsiJoo_MAP {
+
+	/**
+	 * Instance
+	 *
+	 * @var object
+	 */
+	private static $instance;
+
+	/**
+	 * Construct
+	 *
+	 * @access private
+	 */
+	private function __construct() {
+		$this->plugins_loaded();
+		$this->define_constants();
+		$this->load_files();
+	}
+
+	/**
+	 * Create an instance from this class.
+	 *
+	 * @access public
+	 * @return Class
+	 */
+	public static function instance() {
+		if ( is_null( ( self::$instance ) ) ) {
+			self::$instance = new self();
+		}
+
+		return self::$instance;
+	}
+
+	/**
+	 * Define Constans
+	 */
+	private function define_constants() {
+		$this->define( 'NASIMNET_PMAP_VERSION', '3.0.0' );
+		$this->define( 'NASIMNET_PMAP_PATH', plugin_dir_path( __FILE__ ) );
+		$this->define( 'NASIMNET_PMAP_URL', plugin_dir_url( __FILE__ ) );
+	}
+
+	/**
+	 * Define constant if not already set.
+	 *
+	 * @param string      $name  Constant name.
+	 * @param string|bool $value Constant value.
+	 */
+	private function define( $name, $value ) {
+		if ( ! defined( $name ) ) {
+			define( $name, $value );
+		}
+	}
+
+	/**
+	 * Load Files
+	 *
+	 * @return void
+	 */
+	private function load_files() {
+		require_once NASIMNET_PMAP_PATH . 'includes/class-parsijoo-enqueue.php';
+		require_once NASIMNET_PMAP_PATH . 'includes/class-parsijoo-admin.php';
+		require_once NASIMNET_PMAP_PATH . 'includes/class-parsijoo-shortcode.php';
+		require_once NASIMNET_PMAP_PATH . 'includes/class-parsijoo-builder.php';
+	}
+
+	/**
+	 * Load Hooks
+	 *
+	 * @return void
+	 */
+	private function plugins_loaded() {
+		add_action( 'plugins_loaded', array( $this, 'textdomain' ) );
+	}
+
+	/**
+	 * Textdomain
+	 *
+	 * @return void
+	 */
+	public function textdomain() {
+		load_plugin_textdomain( 'parsijoo-map', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+	}
+
 }
-add_action( 'plugins_loaded', 'nasimnet_parsijoo_map_load_textdomain' );
 
-/**
- * admin enqueue scripts
- *
- * @since 1.3
- * @param  string $hook
- * @return void
- */
-function nasimnet_parsijoo_admin_enqueue ($hook) {
-    if( $hook != 'tools_page_nasimnet_parsijoo_map' ) return;
-
-    wp_enqueue_style( 'npmap_admin_css', plugins_url('assets/css/admin.css', __FILE__), array() );
-    wp_enqueue_script( 'npmap_admin_js', plugins_url('assets/js/admin.js', __FILE__), array('leaflet_js'), false, true );
-
-    // load Leaflet
-    wp_enqueue_style( 'leaflet_css', plugins_url('assets/css/leaflet.css', __FILE__), array(), '1.3.1' );
-    wp_enqueue_script( 'leaflet_js', plugins_url('assets/js/leaflet.js', __FILE__), array(), '1.3.1', true );
-
-    // Localize the script
-    $map_api = array( 'mapapi' => esc_attr( get_option( 'parsijoo_api_map') ) );
-    wp_localize_script( 'npmap_admin_js', 'object_map', $map_api );
-}
-add_action( 'admin_enqueue_scripts', 'nasimnet_parsijoo_admin_enqueue' );
-
-/**
- * frontend enqueue scripts
- *
- * @since 1.3
- * @param  string $hook
- * @return void
- */
-function nasimnet_parsijoo_frontend_enqueue() {
-    wp_register_style( 'leaflet_css', plugins_url('assets/css/leaflet.css', __FILE__), array(), '1.3.1' );
-    wp_register_script( 'leaflet_js', plugins_url('assets/js/leaflet.js', __FILE__), array(), '1.3.1', true );
-}
-add_action( 'wp_enqueue_scripts', 'nasimnet_parsijoo_frontend_enqueue' );
-
-/**
- * register deactivation
- *
- * @since 1.0
- */
-register_deactivation_hook( __FILE__, 'deactivation_nasimnet_parsijoo_map' );
-function deactivation_nasimnet_parsijoo_map() {
-	delete_option( 'parsijoo_api_map' );
-}
+NASIMNET_ParsiJoo_MAP::instance();

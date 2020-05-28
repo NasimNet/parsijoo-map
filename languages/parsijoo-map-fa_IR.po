@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Parsijoo MAP\n"
-"POT-Creation-Date: 2018-09-26 14:35+0330\n"
-"PO-Revision-Date: 2018-09-26 14:36+0330\n"
+"POT-Creation-Date: 2020-05-29 01:27+0430\n"
+"PO-Revision-Date: 2020-05-29 01:29+0430\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 2.3.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: parsijoo-map.php\n"
@@ -21,68 +21,75 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: includes/admin.php:18 includes/admin.php:19
-msgid "Parsijoo MAP"
-msgstr "نقشه پارسی جو"
-
-#: includes/admin.php:33
+#: includes/admin-page.php:18
 msgid "Parsijoo MAP Plugin Settings"
 msgstr "تنظیمات افزونه نقشه پارسی جو"
 
-#: includes/admin.php:41
-msgid ""
-"To view the map and build the shotcode, please enter the Persian Maps API."
-msgstr ""
-" جهت مشاهده نقشه و ساخت خودکار شورتکد ، لطفا API نقشه پارسی جو را وارد نمایید"
-
-#: includes/admin.php:49
-msgid "Create Shortcode"
-msgstr "ایجاد شورتکد"
-
-#: includes/admin.php:56
-msgid "MAP Lerning"
-msgstr "آموزش نقشه"
-
-#: includes/admin.php:63
-msgid "POP-UP Parameters"
-msgstr "پارامترهای پاپ آپ"
-
-#: includes/admin.php:70
-msgid "Circle Shortcode"
-msgstr "شورتکد شعاع"
-
-#: includes/admin.php:77 includes/admin.php:261
-msgid "Polygon Shortcode"
-msgstr "شورتکد چند ضلغی"
-
-#: includes/admin.php:84
-#, php-format
-msgid "Developed with %s - Version %s"
-msgstr "طراحی و توسعه توسط  %s - نسخه  %s"
-
-#: includes/admin.php:114
+#: includes/admin-page.php:28
 msgid "Parsijoo API"
 msgstr "API پارسی جو"
 
-#: includes/admin.php:118
+#: includes/admin-page.php:33
 msgid "Enter the Parsijoo Map API Key,"
 msgstr "API نقشه پارسی جو را وارد نمایید ، "
 
-#: includes/admin.php:119
+#: includes/admin-page.php:34
 msgid "API Key Get Guide"
 msgstr "راهنمای دریافت کلید API"
 
-#: includes/admin.php:140
+#: includes/admin-page.php:42
+msgid "Submit"
+msgstr "ذخیره اطلاعات"
+
+#: includes/admin-page.php:56
+msgid ""
+"To view the map and build the shotcode, please enter the Parsijoo Maps API."
+msgstr ""
+" جهت مشاهده نقشه و ساخت خودکار شورتکد ، لطفا API نقشه پارسی جو را وارد نمایید"
+
+#: includes/admin-page.php:66
+msgid "Create Shortcode"
+msgstr "ایجاد شورتکد"
+
+#: includes/admin-page.php:73
+msgid "Select the place you want and copy your shortcode."
+msgstr ""
+"از طریق نقشه زیر مکان مورد نظر خود را انتخاب کرده و شورتکد مکان مورد نظر را "
+"دریافت نمایید."
+
+#: includes/admin-page.php:79
+msgid "Lat"
+msgstr "عرض جغرافیایی"
+
+#: includes/admin-page.php:83
+msgid "Lng"
+msgstr "طول جغرافیایی"
+
+#: includes/admin-page.php:87
+msgid "Zoom"
+msgstr "زوم"
+
+#: includes/admin-page.php:94
+msgid "Copy and paste your shortcode into a post, page or custom widget"
+msgstr ""
+"ابتدا مکان مورد نظر خود را انتخاب کرده و سپس شورتکد زیر را کپی کرده و در "
+"مطالب ، برگه ها و یا ابزارک دلخواه خود قرار دهید"
+
+#: includes/admin-page.php:106
+msgid "MAP Lerning"
+msgstr "آموزش نقشه"
+
+#: includes/admin-page.php:112
 msgid "To use the map on your site, you can use the following shortcode."
 msgstr ""
 "برای استفاده از نقشه در سایت خود می توانید از شورتکد زیر استفاده نمایید."
 
-#: includes/admin.php:145
+#: includes/admin-page.php:117
 #, php-format
 msgid "Parameter %s : Latitude and Longitude, Example: 31.879897, 54.317292"
 msgstr "پارامتر %s : طول و عرض جغرافیایی ، مانند : 31.879897, 54.317292"
 
-#: includes/admin.php:148
+#: includes/admin-page.php:120
 #, php-format
 msgid ""
 "Parameter %s : Map zoom, only a numeric value for this parameter is allowed, "
@@ -91,7 +98,7 @@ msgstr ""
 "پارامتر %s : زوم نقشه ، تنها یک مقدار عددی برای این پارامتر مجاز است ، "
 "استفاده از این پارامتر اختیاری است."
 
-#: includes/admin.php:151
+#: includes/admin-page.php:123
 #, php-format
 msgid ""
 "Parameter %s : The height of the map, only a numeric value for this "
@@ -100,43 +107,23 @@ msgstr ""
 "پارامتر %s :  ارتفاع نقشه ، تنها یک مقدار عددی برای این پارامتر مجاز است ، "
 "استفاده از این پارامتر اختیاری است."
 
-#: includes/admin.php:154
+#: includes/admin-page.php:126
 msgid "The sample is as follows"
 msgstr "نمونه مانند زیر می شود"
 
-#: includes/admin.php:165
-msgid "Select the place you want and copy your shortcode."
-msgstr ""
-"از طریق نقشه زیر مکان مورد نظر خود را انتخاب کرده و شورتکد مکان مورد نظر را "
-"دریافت نمایید."
+#: includes/admin-page.php:136
+msgid "POP-UP Parameters"
+msgstr "پارامترهای پاپ آپ"
 
-#: includes/admin.php:171
-msgid "Lat"
-msgstr "عرض جغرافیایی"
-
-#: includes/admin.php:175
-msgid "Lng"
-msgstr "طول جغرافیایی"
-
-#: includes/admin.php:179
-msgid "Zoom"
-msgstr "زوم"
-
-#: includes/admin.php:186
-msgid "Copy and paste your shortcode into a post, page or custom widget"
-msgstr ""
-"ابتدا مکان مورد نظر خود را انتخاب کرده و سپس شورتکد زیر را کپی کرده و در "
-"مطالب ، برگه ها و یا ابزارک دلخواه خود قرار دهید"
-
-#: includes/admin.php:197 includes/admin.php:198
+#: includes/admin-page.php:143 includes/admin-page.php:144
 msgid "I am a pop-up"
 msgstr "من یک پاپ آپ هستم"
 
-#: includes/admin.php:201 includes/admin.php:203
+#: includes/admin-page.php:147 includes/admin-page.php:149
 msgid "Title pop-up"
 msgstr "عنوان پاپ آپ"
 
-#: includes/admin.php:201 includes/admin.php:203
+#: includes/admin-page.php:147 includes/admin-page.php:149
 msgid ""
 "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy "
 "nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
@@ -144,56 +131,64 @@ msgstr ""
 "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از "
 "طراحان گرافیک است."
 
-#: includes/admin.php:214
+#: includes/admin-page.php:159
 msgid "Applicable in all shortcodes"
 msgstr "پارامترهای پاپ آپ را می توانید در تمامی شورتکدها استفاده نمایید."
 
-#: includes/admin.php:217
+#: includes/admin-page.php:160
 #, php-format
 msgid "Parameter %s : POPUP Image"
 msgstr "پارامتر %s: تصویر پاپ آپ ( آدرس تصویر را وارد نمایید.)"
 
-#: includes/admin.php:220
+#: includes/admin-page.php:161
 #, php-format
 msgid "Parameter %s : POPUP Title"
 msgstr "پارامتر %s: عنوان پاپ آپ ( تنها یک متن وارد نمایید )"
 
-#: includes/admin.php:223
+#: includes/admin-page.php:162
 #, php-format
 msgid "Parameter %s : POPUP Text"
 msgstr "پارامتر %s: متن پاپ آپ ( تگ های html مجاز است )"
 
-#: includes/admin.php:226
+#: includes/admin-page.php:163
 #, php-format
 msgid "Parameter %s : POPUP Details"
 msgstr "پارامتر %s: توضیحات پاپ آپ ( استفاده از تگ های html مجاز است )"
 
-#: includes/admin.php:238 includes/admin.php:266
+#: includes/admin-page.php:173
+msgid "Circle Shortcode"
+msgstr "شورتکد شعاع"
+
+#: includes/admin-page.php:181 includes/admin-page.php:205
 #, php-format
 msgid "ShortCode %s"
 msgstr "شورتکد %s"
 
-#: includes/admin.php:241
+#: includes/admin-page.php:182
 #, php-format
 msgid "Parameter %s : Radius"
 msgstr "پارامتر %s: شعاع"
 
-#: includes/admin.php:244
+#: includes/admin-page.php:183
 #, php-format
 msgid "Parameter %s : Latitude and Longitude"
 msgstr "پارامتر %s : طول و عرض جغرافیایی"
 
-#: includes/admin.php:247 includes/admin.php:272
+#: includes/admin-page.php:184 includes/admin-page.php:207
 #, php-format
 msgid "Parameter %s : Map zoom"
 msgstr "پارامتر %s: زوم نقشه"
 
-#: includes/admin.php:250 includes/admin.php:275
+#: includes/admin-page.php:185 includes/admin-page.php:208
 #, php-format
 msgid "Parameter %s : The height of the map"
 msgstr "پارامتر %s: ارتفاع نقشه"
 
-#: includes/admin.php:269
+#: includes/admin-page.php:197
+msgid "Polygon Shortcode"
+msgstr "شورتکد چند ضلغی"
+
+#: includes/admin-page.php:206
 #, php-format
 msgid ""
 "Parameter %s : To use the parameter polygon, the latitude and longitude must "
@@ -201,6 +196,15 @@ msgid ""
 msgstr ""
 "پارامتر %s : جهت استفاده از پارامتر polygon باید طول و عرض های جغرافیایی "
 "دلخواه خود را با \"-\" از هم جدا شوند."
+
+#: includes/admin-page.php:220
+#, php-format
+msgid "Developed with %1$s - Version %2$s"
+msgstr "طراحی و توسعه توسط  %s - نسخه  %s"
+
+#: includes/class-parsijoo-admin.php:37 includes/class-parsijoo-admin.php:38
+msgid "Parsijoo MAP"
+msgstr "نقشه پارسی جو"
 
 #. Plugin Name of the plugin/theme
 msgid "PARSIJOO MAP"
@@ -217,7 +221,7 @@ msgstr "نسیم نت"
 
 #. Author URI of the plugin/theme
 msgid "https://nasimnet.ir"
-msgstr ""
+msgstr "https://nasimnet.ir"
 
 #~ msgid "Parameter %s : Polygon"
 #~ msgstr "پارامتر %s: چند ضلعی"
